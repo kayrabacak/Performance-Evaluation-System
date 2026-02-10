@@ -1,0 +1,6 @@
+@ITPerformance.API_HostAddress = http://localhost:5124
+
+GET {{ITPerformance.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

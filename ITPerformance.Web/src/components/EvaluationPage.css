@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Değerlendirme Sayfası Stilleri
+   ========================================================================== */
+
+.evaluation-page-container {
+    background-color: #D8D9DA;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.evaluation-page-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.evaluation-form .form-group-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.evaluation-form .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.evaluation-form label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.evaluation-form input[type="text"],
+.evaluation-form select,
+.evaluation-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #FFF6E0;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+}
+
+.evaluation-form hr {
+    border: none;
+    border-top: 1px solid #FFF6E0;
+    margin: 2rem 0;
+}
+
+.criteria-category {
+    margin-bottom: 2rem;
+}
+
+.criteria-category h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.criteria-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+.criteria-item:last-child {
+    border-bottom: none;
+}
+
+.criteria-item label {
+    font-weight: 500;
+}
+
+.score-inputs {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.score-inputs label {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+.evaluation-form .submit-button {
+    margin-top: 40px;
+    width: auto;
+    padding: 0.75rem 2rem;
+    float: right; /* Butonu sağa yaslar */
+    background-color: #61677A;
+    color: white;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Her bir alt kriteri ve açıklamasını saran ana kutu */
+.criteria-item-wrapper {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.criteria-item-wrapper:last-child {
+    border-bottom: none;
+}
+
+/* Kriterin başlığı, puanları ve butonunu içeren üst satır */
+.criteria-item-main-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Öğeler arası boşluk */
+    margin-left: 25px;
+}
+
+/* Label'ın (başlık ve ağırlık) genişleyerek diğerlerini itmesini sağlar */
+.criteria-item-main-row label {
+    flex-grow: 1;
+}
+
+/* Açıklamaları içeren ve aşağıda görünen kutu */
+.sub-criterion-descriptions {
+    margin-top: 12px;
+    padding-left: 25px;
+    margin-left: 10px;
+    border-left: 3px solid #e0e0e0;
+}
+
+/* Açıklama metinlerinin stilleri */
+.sub-criterion-descriptions p {
+    margin: 6px 0;
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.sub-criterion-descriptions p strong {
+    color: #333;
+}
+
+
+
+.details-toggle-button {
+    background-color: #61677A;
+    color: white;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+.submit-button{
+        background-color: #61677A;
+    color: white;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}

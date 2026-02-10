@@ -1,0 +1,339 @@
+/* ==========================================================================
+   Admin Paneli Modül İçi Sayfa Stilleri
+   ========================================================================== */
+.module-page-container {
+    background-color: #D8D9DA;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #D8D9DA;
+}
+
+.module-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.add-button {
+    background-color: #272829;
+    color: white;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover {
+    background-color: #61677A;
+}
+
+/* Form ve Liste Konteynerleri */
+.form-container, .list-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #D8D9DA;
+    border: 3px solid #FFF6E0;
+    border-radius: 0.5rem;
+}
+
+.form-container h4, .list-container h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Tablolar */
+.table-container {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+.data-table th, .data-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.data-table th {
+    background-color: #D8D9DA;
+    color: #374151;
+    font-weight: 600;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.actions-column {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-button {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.action-button.edit { background-color: #61677A; color: #FFF6E0; }
+.action-button.deactivate { background-color: #61677A; color: #FFF6E0; }
+.action-button.activate { background-color: #61677A; color: #FFF6E0; }
+
+/* Durum Etiketleri */
+.status-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+.status-tag.active { background-color: #dcfce7; color: #166534; }
+.status-tag.inactive { background-color: #fee2e2; color: #991b1b; }
+
+/* Kriter Yönetimi Özel Stilleri */
+.add-criterion-form { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; }
+.add-criterion-form input, .add-criterion-form select { padding: 0.6rem; border: 1px solid #d1d5db; border-radius: 0.375rem; flex-grow: 1; }
+.add-criterion-form .add-button { flex-shrink: 0; }
+.description-fields { display: flex; flex-direction: column; gap: 0.75rem; width: 100%; margin-top: 1rem; }
+.description-fields textarea { width: 100%; padding: 0.6rem; border: 1px solid #d1d5db; border-radius: 0.375rem; min-height: 60px; }
+.criteria-list, .sub-criteria-list { list-style: none; padding-left: 0; }
+.sub-criteria-list { margin-left: 2rem; margin-top: 1rem; border-left: 5px solid #e5e7eb; padding-left: 1rem; }
+.criterion-item { padding: 1rem; border-bottom: 4px solid #f3f4f6; }
+.criterion-item:last-child { border-bottom: none; }
+.criterion-header { display: flex; justify-content: space-between; align-items: center; }
+.criterion-header strong { font-size: 1rem; font-weight: 500; }
+.item-buttons { display: flex; gap: 0.5rem;}
+.item-buttons button{background-color: #61677A;
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s;}
+.item-buttons button:hover{background-color: #61677A;}
+.description-display { margin-top: 0.75rem; padding-left: 1rem; font-size: 0.875rem; color: #4b5563; }
+.description-display p { margin-bottom: 0.25rem; }
+.inactive-tag { font-size: 0.75rem; font-weight: 500; padding: 0.2rem 0.6rem; background-color: #fef2f2; color: #991b1b; border-radius: 9999px; margin-left: 0.5rem; }
+ .edit-button { display: flex; gap: 0.5rem;}
+ .edit-button button{background-color: #61677A;color: white;font-weight: 500;padding: 0.6rem 1.2rem;border:none; border-radius: 0.375rem; cursor: pointer; transition: background-color 0.2s; margin-left: 5px;}
+ .edit-button:hover{background-color: #61677A;}
+ 
+ .custom-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 6px;
+  border-radius: 5px;
+  background: white;
+  outline: none;
+}
+
+.custom-slider:hover {
+  background: white; /* hover efekti */
+}
+
+/* Chrome, Edge, Safari için thumb */
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #61677A;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Ana kriterler */
+.criterion-list-item:not(.sub-criterion-item) {
+  font-size: 1.1rem;   /* yazıyı biraz büyüt */
+  font-weight: 600;    /* kalınlaştır */
+  color: #222;         /* daha belirgin renk */
+  margin-top: 8px;
+}
+
+/* Alt kriterler */
+.sub-criterion-item {
+  margin-left: 20px;
+  font-size: 0.95rem;
+  color: #555;
+  position: relative;
+}
+
+.sub-criterion-item::before {
+  content: "↳";
+  position: absolute;
+  left: -15px;
+  color: #888;
+}
+
+
+.criterion-list-item {
+  padding: 6px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-criterion-item {
+  margin-left: 40px;  /* içeri kaydırma */
+  font-size: 0.95rem; /* biraz daha küçük yazı */
+  color: #555;        /* gri ton */
+  position: relative;
+}
+
+.sub-criterion-item::before {
+  content: "↳";        /* ok işareti veya ikon */
+  position: absolute;
+  left: -15px;
+  color: #888;
+}
+
+
+/* AdminPanel.css veya ilgili CSS dosyanıza ekleyin */
+
+/* .criterion-header'ı dikey hizalama için yeniden yapılandıralım */
+.criterion-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Öğeleri alt alta sırala */
+    align-items: flex-start; /* Öğeleri sola hizala */
+}
+
+.criterion-title {
+    font-weight: bolder;
+    font-size: 1.4em; /* Ana başlığı biraz büyütelim */
+    color: #333;
+    margin-bottom: 8px; /* Alt satırla arasına boşluk koy */
+}
+
+/* Ağırlık ve butonları içeren alt satır */
+.criterion-details {
+    display: flex;
+    justify-content: space-between; /* Ağırlığı sola, butonları sağa yaslar */
+    align-items: center;
+    width: 100%;
+    padding-left: 25px; /* Alt satıra girinti verir */
+}
+
+.criterion-weight {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Durum etiketi ve butonları bir arada tutan grup */
+.criterion-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* (Pasif) etiketi ile butonlar arasına boşluk koyar */
+}
+
+/* Pasif etiketinin stilini de tanımlayalım */
+.inactive-tag {
+    color: #dc3545; /* Kırmızı renk */
+    background-color: #f8d7da; /* Açık kırmızı arka plan */
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.validation-summary-container{
+  margin-top: 20px;
+}
+
+
+/* Bu sınıf zaten .summary-item'a dinamik olarak ekleniyor, biz sadece stilini tanımlıyoruz */
+.summary-invalid {
+  color: #272829; /* Koyu sarı/kahverengi yazı rengi */
+  background-color: #D8D9DA; /* Açık sarı arka plan */
+  border-left: 4px solid #272829; /* Solda belirgin bir uyarı çizgisi */
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Geçerli durum için de hafif bir stil (isteğe bağlı) */
+.summary-valid {
+  color: #272829; /* Koyu yeşil yazı */
+  background-color: #D8D9DA; /* Açık yeşil arka plan */
+  border-left: 4px solid #272829; /* Solda onay çizgisi */
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* İkon eklemek için (isteğe bağlı ama şık durur) */
+.summary-invalid::before {
+  content: "⚠️ "; /* Uyarı ikonu */
+  margin-right: 8px;
+}
+
+.summary-valid::before {
+  content: "✔ "; /* Onay ikonu */
+  margin-right: 8px;
+}
+
+
+
+.filters-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ranking-list-container {
+    margin-top: 20px;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.ranking-table th, .ranking-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ranking-table thead tr {
+    background-color: #f2f2f2;
+}
+
+.ranking-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.ranking-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.ranking-table td:first-child {
+    font-weight: bold;
+    width: 60px;
+    text-align: center;
+}

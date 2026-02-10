@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Değerlendirme Rapor Kartları Stilleri
+   ========================================================================== */
+
+.evaluation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.evaluation-card {
+    background-color: #D8D9DA;
+    border: 0.25px solid #61677A;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.evaluation-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #D8D9DA;
+    border-bottom: 1px solid #61677A;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.evaluation-card-header h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.evaluation-card-header span {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.evaluation-card-body {
+    padding: 1.5rem;
+}
+
+.evaluation-card-body p {
+    margin-bottom: 0.75rem;
+    color: #374151;
+}
+
+.evaluation-card-body p strong {
+    color: #111827;
+}
+
+.evaluation-card-body h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #D8D9DA;
+}   
+
+.evaluation-card-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.evaluation-card-body ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #D8D9DA;
+}
+.evaluation-card-body ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+.chart-container {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.chart-container h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 900px) {
+    .charts-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+.evaluation-card-header.clickable {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.evaluation-card-header.clickable:hover {
+    background-color: #f0f2f5; 
+}
+
