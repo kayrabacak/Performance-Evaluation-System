@@ -88,3 +88,11 @@ This repository is configured to exclude sensitive files like `.env` and local u
 - **Frontend**: Create a `.env` file in `ITPerformance.Web` if your logic requires environment variables (e.g., `VITE_API_BASE_URL=http://localhost:5296`).
 - **Backend**: Ensure your `appsettings.json` or `User Secrets` are correctly configured for your local SQL Server instance.
 
+
+## 🤝 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## 📝 License
+This project is licensed under the MIT License.
+
+
